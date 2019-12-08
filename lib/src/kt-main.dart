@@ -98,6 +98,7 @@ class KtApp extends StatelessWidget {
 
     return Container(
       child: Scaffold(
+        resizeToAvoidBottomPadding: false,
         /*appBar: AppBar(
           leading: Icon(Icons.local_hospital),
           title: appName,
@@ -107,6 +108,7 @@ class KtApp extends StatelessWidget {
             Icon(Icons.contacts)*/
           ],
         ),*/
+        
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add_to_queue),//Text('NONT'),
           onPressed: (){

@@ -9,9 +9,9 @@ class _LoginScreenState extends State<LoginScreen> { //class form
   @override
 
  final _formKey =GlobalKey<FormState>(); // กำหนด ตัวแปร _formKey จาก GlobalKey<FormState> ของFLUTTER
-
+ 
   Widget build(BuildContext context) { //LoginScreen
-    return Container(
+    return  Container(      
       margin: EdgeInsets.all(20.0), //margin 20
       child: Form(            //Form
         key: _formKey,        //key = _formKey เพื่อเช็คฟอร์ม
@@ -26,14 +26,16 @@ class _LoginScreenState extends State<LoginScreen> { //class form
     );
   }
 
+
   Widget emailField(){ //Form Email
-    return TextFormField( //Return เป็น TextFormField
+    return  TextFormField( //Return เป็น TextFormField
       validator: (value){ //ตรวจสอบค่า
         if(value.isEmpty){ //ถ้าเป็นค่าว่างห้แสดงข้อความ
           return 'Please Enter Your Email';
         }
         return null; //อื่นๆ = null
       },
+      keyboardType: TextInputType.emailAddress,
       decoration: 
         InputDecoration(labelText: 'Email Address',hintText: 'you@domain.com'),
     );
