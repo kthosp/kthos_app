@@ -96,9 +96,9 @@ class KtApp extends StatelessWidget {
     );
 
 
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
+    return Container(
+      child: Scaffold(
+        /*appBar: AppBar(
           leading: Icon(Icons.local_hospital),
           title: appName,
           actions: <Widget>[
@@ -106,7 +106,7 @@ class KtApp extends StatelessWidget {
             Icon(Icons.cloud_upload),
             Icon(Icons.contacts)*/
           ],
-        ),
+        ),*/
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add_to_queue),//Text('NONT'),
           onPressed: (){
