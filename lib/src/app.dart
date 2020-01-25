@@ -17,10 +17,10 @@ class App extends StatelessWidget {
       child: MaterialApp( //Render MaterialApp
       home: DefaultTabController( //home
         length: 3,
-        child: Scaffold(
+        child: Scaffold(          
           resizeToAvoidBottomInset: false,
           /* AppBar */
-          appBar: AppBar( //scaffold > appBar     
+          appBar: AppBar( //scaffold > appBar               
             leading: Icon(Icons.local_hospital), //icon
             title: Text('Klongthom Hospital App'),//app name
             actions: <Widget>[ //action > icon
