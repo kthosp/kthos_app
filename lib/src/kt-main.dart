@@ -33,67 +33,153 @@ class KtApp extends StatelessWidget {
     'MAP'];
 
     var myCard1 = new Card( // create Card
-      color: Colors.red[50], // Colors.blue[50] is shade color 
+      //color: Colors.red[50], // Colors.blue[50] is shade color 
       child: Column(
-        children: <Widget>[Image.asset(imageStrings[0], width: 128.0, height: 128.0),Text(nameStrings[0])],
+        //crossAxisAlignment: CrossAxisAlignment.start,
+        //mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+                          Expanded(
+                                    child: FittedBox(
+                                        fit: BoxFit.contain,
+                                        child:   Image(image: AssetImage(imageStrings[1])), //รูปปุ่ม
+                                    ),
+                            ),
+                            /*Image.asset(imageStrings[0], width: 128.0, height: 128.0),*/
+                          Text(nameStrings[0]) //ข้อความปุ่ม
+                  ],
       ),
     );
 
     var myCard2 = new Card( // create Card
-      color: Colors.green[50], // Colors.blue[50] is shade color 
+      //color: Colors.red[50], // Colors.blue[50] is shade color 
       child: Column(
-        children: <Widget>[Image.asset(imageStrings[1], width: 128.0, height: 128.0),Text(nameStrings[1])],
+        children: <Widget>[
+                          Expanded(
+                                    child: FittedBox(
+                                        fit: BoxFit.contain,
+                                        child: Image.asset(imageStrings[1]), //รูปปุ่ม
+                                    ),
+                            ),
+                            /*Image.asset(imageStrings[1], width: 128.0, height: 128.0),*/
+                          Text(nameStrings[1]) //ข้อความปุ่ม
+                  ],
       ),
     );
 
     var myCard3 = new Card( // create Card
-      color: Colors.blue[50], // Colors.blue[50] is shade color 
+      //color: Colors.red[50], // Colors.blue[50] is shade color 
       child: Column(
-        children: <Widget>[Image.asset(imageStrings[2], width: 128.0, height: 128.0),Text(nameStrings[2])],
+        children: <Widget>[
+                          Expanded(
+                                    child: FittedBox(
+                                        fit: BoxFit.contain,
+                                        child: Image.asset(imageStrings[2]), //รูปปุ่ม
+                                    ),
+                            ),
+                            /*Image.asset(imageStrings[2], width: 128.0, height: 128.0),*/
+                          Text(nameStrings[2]) //ข้อความปุ่ม
+                  ],
       ),
     );
 
     var myCard4 = new Card( // create Card
-      color: Colors.purple[50], // Colors.blue[50] is shade color 
+      //color: Colors.red[50], // Colors.blue[50] is shade color 
       child: Column(
-        children: <Widget>[Image.asset(imageStrings[3], width: 128.0, height: 128.0),Text(nameStrings[3])],
+        children: <Widget>[
+                          Expanded(
+                                    child: FittedBox(
+                                        fit: BoxFit.contain,
+                                        child: Image.asset(imageStrings[3]), //รูปปุ่ม
+                                    ),
+                            ),
+                            /*Image.asset(imageStrings[3], width: 128.0, height: 128.0),*/
+                          Text(nameStrings[3]) //ข้อความปุ่ม
+                  ],
       ),
     );
 
     var myCard5 = new Card( // create Card
-      color: Colors.orange[50], // Colors.blue[50] is shade color 
+      //color: Colors.red[50], // Colors.blue[50] is shade color 
       child: Column(
-        children: <Widget>[Image.asset(imageStrings[4], width: 128.0, height: 128.0),Text(nameStrings[4])],
+        children: <Widget>[
+                          Expanded(
+                                    child: FittedBox(
+                                        fit: BoxFit.contain,
+                                        child: Image.asset(imageStrings[4]), //รูปปุ่ม
+                                    ),
+                            ),
+                            /*Image.asset(imageStrings[4], width: 128.0, height: 128.0),*/
+                          Text(nameStrings[4]) //ข้อความปุ่ม
+                  ],
       ),
     );
 
     var myCard6 = new Card( // create Card
-      color: Colors.brown[50], // Colors.blue[50] is shade color 
+      //color: Colors.red[50], // Colors.blue[50] is shade color 
       child: Column(
-        children: <Widget>[Image.asset(imageStrings[5], width: 128.0, height: 128.0),Text(nameStrings[5])],
+        children: <Widget>[
+                          Expanded(
+                                    child: FittedBox(
+                                        fit: BoxFit.contain,
+                                        child: Image.asset(imageStrings[5]), //รูปปุ่ม
+                                    ),
+                            ),
+                            /*Image.asset(imageStrings[5], width: 128.0, height: 128.0),*/
+                          Text(nameStrings[5]) //ข้อความปุ่ม
+                  ],
       ),
     );
 
     var myCard7 = new Card( // create Card
-      color: Colors.green[50], // Colors.blue[50] is shade color 
+      //color: Colors.red[50], // Colors.blue[50] is shade color 
       child: Column(
-        children: <Widget>[Image.asset(imageStrings[6], width: 128.0, height: 128.0),Text(nameStrings[6])],
+        children: <Widget>[
+                          Expanded(
+                                    child: FittedBox(
+                                        fit: BoxFit.contain,
+                                        child: Image.asset(imageStrings[6]), //รูปปุ่ม
+                                    ),
+                            ),
+                            /*Image.asset(imageStrings[6], width: 128.0, height: 128.0),*/
+                          Text(nameStrings[6]) //ข้อความปุ่ม
+                  ],
       ),
     );
 
     var myCard8 = new Card( // create Card
-      color: Colors.pink[50], // Colors.blue[50] is shade color 
+      //color: Colors.red[50], // Colors.blue[50] is shade color 
       child: Column(
-        children: <Widget>[Image.asset(imageStrings[7], width: 128.0, height: 128.0),Text(nameStrings[7])],
+        children: <Widget>[
+                          Expanded(
+                                    child: FittedBox(
+                                        fit: BoxFit.contain,
+                                        child: Image.asset(imageStrings[7]), //รูปปุ่ม
+                                    ),
+                            ),
+                            /*Image.asset(imageStrings[7], width: 128.0, height: 128.0),*/
+                          Text(nameStrings[7]) //ข้อความปุ่ม
+                  ],
       ),
     );
 
     var myCard9 = new Card( // create Card
-      color: Colors.yellow[50], // Colors.blue[50] is shade color 
+      //color: Colors.red[50], // Colors.blue[50] is shade color 
       child: Column(
-        children: <Widget>[Image.asset(imageStrings[8], width: 128.0, height: 128.0),Text(nameStrings[8])],
+        children: <Widget>[
+                          Expanded(
+                                    child: FittedBox(
+                                        fit: BoxFit.contain,
+                                        child: Image.asset(imageStrings[8]), //รูปปุ่ม
+                                    ),
+                            ),
+                            /*Image.asset(imageStrings[8], width: 128.0, height: 128.0),*/
+                          Text(nameStrings[8]) //ข้อความปุ่ม
+                  ],
       ),
     );
+
+
+
 
 
     return Container(
@@ -116,6 +202,7 @@ class KtApp extends StatelessWidget {
           },
         ),
 
+/*
         body: Container(
           child: Column(
             children: <Widget>[
@@ -136,7 +223,67 @@ class KtApp extends StatelessWidget {
               )
             ],
           ),
+          color:  Colors.blue,
+          alignment: Alignment.center,
+          //padding: EdgeInsets.all(50.0),
+          //margin: EdgeInsets.all(50.0),
         ),
+*/
+
+body: GridView.count(
+  primary: false,
+  padding: const EdgeInsets.all(20),
+  crossAxisSpacing: 10,
+  mainAxisSpacing: 10,
+  crossAxisCount: 3,
+  children: <Widget>[
+    Container(
+      padding: const EdgeInsets.all(8),
+      child: Align(alignment: Alignment.center, child: myCard1, ),
+      color: Colors.teal[100],
+    ),
+    Container(
+      padding: const EdgeInsets.all(8),
+      child: Align(alignment: Alignment.center, child: myCard2, ),
+      color: Colors.teal[200],
+    ),
+    Container(
+      padding: const EdgeInsets.all(8),
+      child: Align(alignment: Alignment.center, child: myCard3, ),
+      color: Colors.teal[300],
+    ),
+    Container(
+      padding: const EdgeInsets.all(8),
+      child: Align(alignment: Alignment.center, child: myCard4, ),
+      color: Colors.teal[400],
+    ),
+    Container(
+      padding: const EdgeInsets.all(8),
+      child: Align(alignment: Alignment.center, child: myCard5, ),
+      color: Colors.teal[500],
+    ),
+    Container(
+      padding: const EdgeInsets.all(8),
+      child: Align(alignment: Alignment.center, child: myCard6, ),
+      color: Colors.teal[600],
+    ),
+    Container(
+      padding: const EdgeInsets.all(8),
+      child: Align(alignment: Alignment.center, child: myCard7, ),
+      color: Colors.teal[700],
+    ),
+    Container(
+      padding: const EdgeInsets.all(8),
+      child: Align(alignment: Alignment.center, child: myCard8, ),
+      color: Colors.teal[800],
+    ),
+    Container(
+      padding: const EdgeInsets.all(8),
+      child: Align(alignment: Alignment.center, child: myCard9, ),
+      color: Colors.teal[900],
+    ),
+  ],
+)
 
       ),
     );
