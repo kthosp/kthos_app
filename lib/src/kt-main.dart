@@ -22,6 +22,7 @@ class KtApp extends StatelessWidget {
     'img/refer_icon.png',
     'img/hospitallocat.png'];
 
+
     var nameStrings = ['อุบัติเหตุฉุกเฉิน',
     'ตรวจโรคทั่วไป',
     'เภสัชกรรม',
@@ -32,22 +33,23 @@ class KtApp extends StatelessWidget {
     'ส่งต่อผู้ป่วย',
     'MAP'];
 
+
+
     var myCard1 = new Card( // create Card
       //color: Colors.red[50], // Colors.blue[50] is shade color 
       child: Column(
-        //crossAxisAlignment: CrossAxisAlignment.start,
-        //mainAxisSize: MainAxisSize.min,
-        children: <Widget>[
+        children:  <Widget>[
                           Expanded(
                                     child: FittedBox(
                                         fit: BoxFit.contain,
-                                        child:   Image(image: AssetImage(imageStrings[1])), //รูปปุ่ม
+                                        child:  Image.asset(imageStrings[0]) , //รูปปุ่ม
                                     ),
                             ),
-                            /*Image.asset(imageStrings[0], width: 128.0, height: 128.0),*/
+                          /*Image.asset(imageStrings[0], width: 128.0, height: 128.0 ,fit: BoxFit.contain,),*/
                           Text(nameStrings[0]) //ข้อความปุ่ม
-                  ],
+                  ],      
       ),
+      
     );
 
     var myCard2 = new Card( // create Card
@@ -177,10 +179,6 @@ class KtApp extends StatelessWidget {
                   ],
       ),
     );
-
-
-
-
 
     return Container(
       child: Scaffold(

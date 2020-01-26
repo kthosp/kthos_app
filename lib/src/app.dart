@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kthos_app/src/kt-main.dart';
+import 'package:kthos_app/src/ktapp.dart';
 import 'package:kthos_app/src/login_screen.dart';
 import 'package:kthos_app/src/test.dart';//import login_screen.dart
 
@@ -20,7 +20,9 @@ class App extends StatelessWidget {
         child: Scaffold(          
           resizeToAvoidBottomInset: false,
           /* AppBar */
-          appBar: AppBar( //scaffold > appBar               
+          appBar: AppBar( //scaffold > appBar    
+            //backgroundColor: Color.fromARGB(200, 255, 255, 255),  //สีเมนู         
+            backgroundColor: Colors.teal[500],//สีเมนู
             leading: Icon(Icons.local_hospital), //icon
             title: Text('Klongthom Hospital App'),//app name
             actions: <Widget>[ //action > icon
