@@ -28,6 +28,7 @@ class App extends StatelessWidget {
             actions: <Widget>[ //action > icon
                 Icon(Icons.menu),
               ],
+            
             bottom: TabBar(
               tabs: <Widget>[
                 Tab(icon: Icon(Icons.home)),
@@ -35,6 +36,7 @@ class App extends StatelessWidget {
                 Tab(icon: Icon(Icons.settings)),
               ],
             ),
+            
           ),
           /* Body */
           body: 
@@ -47,6 +49,24 @@ class App extends StatelessWidget {
                     Icon(Icons.settings),
                   ],
           ),
+
+          bottomNavigationBar: BottomNavigationBar(
+            items: const <BottomNavigationBarItem>[
+              BottomNavigationBarItem(
+                icon: Icon(Icons.home),
+                title: Text('HOME'),
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.supervised_user_circle),
+                title: Text('USER'),
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.settings),
+                title: Text('SETTING'),
+              ),
+            ],
+          ),
+
          ),
       ),
     ),
